@@ -1,0 +1,64 @@
+body{
+  background-color: #4e4e4e;
+
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.addForm{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 10px;
+
+  input{
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4e4e4e;
+    padding-left: 10px;
+  }
+}
+.addGraphic{
+  border: 1px solid black;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333333;
+}
+.title{
+  color: white;
+  text-align: center;
+}
+.desk{
+  width: 100%;
+  height: 500px;
+  background-color: #333333;
+
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+@keyframes expandHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--height);
+  }
+}
+
+.graphic {
+  background-color: var(--color);
+  width: 40px;
+  border: 3px solid var(--border-color);
+  animation: expandHeight 0.5s ease-out forwards;
+  padding: 5px;
+}
+
